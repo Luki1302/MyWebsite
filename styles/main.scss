@@ -1,0 +1,29 @@
+body {
+  font-family: 'Helvetica', serif;
+}
+.page-container {
+  margin: 20px;
+}
+header {
+  margin-bottom: 50px;
+}
+footer {
+  margin-top: 50px;
+  font-size: 0.75em;
+}
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+h2 {
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+p {
+  margin-bottom: 1em;
+}
+nav ul {
+  display: flex;
+  gap: 1em;
+}
