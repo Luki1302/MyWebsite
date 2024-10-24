@@ -2,7 +2,7 @@
   font-family: "ProximaNova";
   src:
     local("ProximaNova"),
-    url("/fonts/ProximaNovaT-Light.woff") format("woff");
+    url("/fonts/ProximaNova-Light.woff") format("woff");
 }
 
 @font-face {
@@ -53,6 +53,10 @@ body {
 
 video {
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .page-container {
