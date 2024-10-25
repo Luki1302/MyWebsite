@@ -15,8 +15,8 @@ async function loadComponent(componentId, filePath) {
 
 // Load the header and footer components
 document.addEventListener("DOMContentLoaded", async (event) => {
-  // await loadComponent("header", "includes/header.html");
-  // await loadComponent("footer", "includes/footer.html");
+  await loadComponent("header", "includes/header.html");
+  await loadComponent("footer", "includes/footer.html");
 
   // Ladeanimation
   setTimeout(function () {
