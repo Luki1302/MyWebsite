@@ -180,6 +180,7 @@ p {
   object-fit: cover;
   object-position: center;
 }
+
 .frontimage-top {
   height: 30em;
   width: 100%;
@@ -377,6 +378,10 @@ p {
   display: none;
   margin-bottom: 1em;
 }
+.slide4 {
+  display: none;
+  margin-bottom: 1em;
+}
 
 .diashow {
   position: relative;
@@ -441,7 +446,6 @@ p {
   border-bottom: 1px solid black;
   margin-bottom: 1em;
 }
-
 
 footer {
   margin-top: 82.5em;
@@ -586,6 +590,11 @@ nav ul {
     display: block;
     margin-bottom: 1em;
   }
+  .mobile-pics-logo {
+    display: block;
+    max-width: 50%;
+    margin-bottom: 1em;
+  }
   .mobile-pics-bottom {
     display: block;
     margin-bottom: 0em;
@@ -613,10 +622,9 @@ nav ul {
   .project-detail-bottom2 {
     margin-bottom: -1em;
   }
-  #printtheerror-hochformat {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
+  .project-detail-single{
+    display: block;
+    margin-bottom:0em;
   }
   .project-detail-video {
     width: 100%;

@@ -37,17 +37,24 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const menuItems = document.querySelectorAll(".has-section");
   // console.log("menuItems", menuItems);
   if (menuItems) {
+    // console.log("1");
     // add a click event to each
     menuItems.forEach((element) => {
+      // console.log(element);
       element.addEventListener("click", (e) => {
+        // console.log("2");
         e.preventDefault();
         // find the corresponding content div based on which menu element is clicked
         const id = element.getAttribute("href");
         const section = document.querySelector(id);
-        console.log("section", section);
+        // console.log(id);
+
+        // console.log(section);
         if (section) {
-          // console.log('section', section)
-          scrollTo({ top: section.offsetTop - 100, behavior: "smooth" });
+          // console.log("section", section);
+          window.scrollTo({
+            top: section.offsetTop - 100,
+          });
         }
       });
     });
@@ -143,6 +150,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var slides = document.querySelectorAll(".slide3");
+  var currentSlide = 0;
+
+  showSlide();
+
+  function showSlide() {
+    slides.forEach(function (slide) {
+      slide.style.display = "none";
+    });
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.display = "block";
+    setTimeout(showSlide, 3000); // Wechsel alle 3 Sekunden
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var slides = document.querySelectorAll(".slide4");
   var currentSlide = 0;
 
   showSlide();
