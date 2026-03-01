@@ -21,6 +21,7 @@ The website is designed to reflect this approach:
 - Concept Development
 
 <h2>Technical Overview</h2>
+
 The website is built with a lightweight and modular structure:
 
 - HTML5
@@ -35,7 +36,5 @@ Development and refinement were supported by AI-assisted tools for research, opt
 For collaborations, commissions or inquiries:
 
 Website: [lukashecht.ch](https://lukashecht.ch/)
-
 Email: lukas.hecht@bluewin.ch
-
 Instagram: [lukashecht1](https://www.instagram.com/lukashecht1/)
