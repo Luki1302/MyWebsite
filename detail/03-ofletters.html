@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Of Letters</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="detail-page has-page-title" data-page-title="Of Letters">
+    <div id="header-placeholder"></div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="detail-info">
+      <div class="flex-container">
+        <div class="flex-item mob-less-space">
+          <div class="info-row">
+            <div class="info-label"><p>Year</p></div>
+            <div class="info-value"><p>2025</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Duration</p></div>
+            <div class="info-value"><p>4 weeks</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Mentoring</p></div>
+            <div class="info-value">
+              <a
+                href="https://zybinska.com/"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                >Paulina Zybinska</a
+              >
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Team</p></div>
+            <div class="info-value"><p>Robin Schneider</p></div>
+          </div>
+        </div>
+        <div class="flex-item"></div>
+        <div class="flex-item">
+          <p>
+            “&#8239;Of Letters&#8239;” is an interactive installation that
+            explores the tension between hand-drawn expression and
+            machine-driven order. Intuitive gestures are translated into a
+            structured dataset, where the human initiates the process but has no
+            influence over how the drawings are classified.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="video-player flex-container flex-container-smallspace mob-more-space"
+    >
+      <video autoplay loop muted playsinline data-mobile-hf>
+        <source
+          src="../assets/03-ofletters/03-ofletters-1.webm"
+          type="video/webm"
+        />
+        <source
+          src="../assets/03-ofletters/03-ofletters-1.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <div class="flex-container flex-container-smallspace mob-no-space">
+      <div class="flex-item flex-item-3"></div>
+      <div class="flex-item flex-item-3 mob-order-2">
+        <img src="../assets/03-ofletters/03-ofletters-2.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4 mob-order-1 mob-less-space mob-mt-md">
+        <p>
+          The input mode allows users to draw a letter, confirm it, and have it
+          classified by an AI system before being added to the dataset.
+        </p>
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-no-space">
+      <div class="flex-item mob-less-space mob-mt-md">
+        <p>
+          In the control mode, touch gestures are used to navigate and filter
+          the dataset, allowing users to isolate specific letters and
+          distinguish between uppercase and lowercase.
+        </p>
+      </div>
+      <div class="flex-item flex-item-2"></div>
+    </div>
+    <div class="flex-container flex-container-smallspace mob-no-space">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4 flex-item-center">
+        <img src="../assets/03-ofletters/03-ofletters-3.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-6">
+        <img src="../assets/03-ofletters/03-ofletters-4.webp" />
+      </div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-no-space">
+      <div class="flex-item"></div>
+      <div class="flex-item mob-less-space mob-mt-md">
+        <p>
+          The matrix visualizes all inputs in a minimalist grid, exposing the
+          subtle differences in handwriting characteristics.
+        </p>
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <div class="flex-container flex-container-smallspace">
+      <div class="flex-item">
+        <img src="../assets/03-ofletters/03-ofletters-5.webp" />
+      </div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-more-space">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4">
+        <img src="../assets/03-ofletters/03-ofletters-6.webp" />
+      </div>
+      <div class="flex-item flex-item-2"></div>
+      <div class="flex-item flex-item-4">
+        <img src="../assets/03-ofletters/03-ofletters-7.webp" />
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <script>
+      (function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          var video = document.querySelector("video[data-mobile-hf]");
+          if (video) {
+            video.innerHTML = "";
+            var s1 = document.createElement("source");
+            s1.src = "../assets/03-ofletters/03-ofletters-1-hf.webm";
+            s1.type = "video/webm";
+            var s2 = document.createElement("source");
+            s2.src = "../assets/03-ofletters/03-ofletters-1-hf.mp4";
+            s2.type = "video/mp4";
+            video.appendChild(s1);
+            video.appendChild(s2);
+            video.load();
+          }
+        }
+      })();
+    </script>
+    <script src="../js/load-header.js"></script>
+    <script src="../js/load-menu.js"></script>
+    <script src="../js/video-controls.js"></script>
+  </body>
+</html>

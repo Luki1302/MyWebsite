@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOST</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="detail-page has-page-title" data-page-title="Lost">
+    <div id="header-placeholder"></div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="detail-info">
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="info-row">
+            <div class="info-label"><p>Year</p></div>
+            <div class="info-value"><p>2026</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Duration</p></div>
+            <div class="info-value"><p>1 semester</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Mentoring</p></div>
+            <div class="info-value">
+              <a
+                href="https://www.berenice-serra.com/"
+                class="info-link"
+                target="_blank"
+                >Bérénice Serra</a
+              >
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Link</p></div>
+            <div class="info-value">
+              <a
+                href="https://berenice-serra.com/screenascamera/"
+                class="info-link"
+                target="_blank"
+                >Film</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item"></div>
+        <div class="flex-item">
+          <p>
+            “&#8239;LOST&#8239;” explores what it means to be displaced, by
+            disaster, by borders, by circumstance, and asks the central
+            question&#8239;: where do we belong when the places meant to hold us
+            can no longer keep us&#8239;?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="video-player flex-container flex-container-smallspace mob-more-space"
+    >
+      <video autoplay loop muted playsinline data-mobile-hf>
+        <source src="../assets/13-lost/13-lost-1.webm" type="video/webm" />
+        <source src="../assets/13-lost/13-lost-1.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-no-space">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4 mob-less-space mob-mt-md">
+        <p>
+          “&#8239;LOST&#8239;” is an experimental film about people pushed away
+          from their homes. Some return to what remains, a home that no longer
+          resembles the one they left behind. Others search for home they are
+          never allowed to reach, moving through borders, shelters, and hidden
+          spaces where belonging is denied to them. The film mirrors these human
+          experiences with all the environments it moves through.
+        </p>
+      </div>
+      <div class="flex-item flex-item-7"></div>
+    </div>
+    <div class="flex-container flex-container-smaller-space">
+      <div class="flex-item"></div>
+      <div class="flex-item">
+        <img src="../assets/13-lost/13-lost-2.webp" />
+      </div>
+    </div>
+    <div class="flex-container flex-container-smallspace mob-no-space">
+      <div class="flex-item flex-item-5">
+        <img src="../assets/13-lost/13-lost-3.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div
+        class="flex-item flex-item-4 flex-item-bottom mob-less-space mob-mt-sm"
+      >
+        <p>
+          Lost places become a metaphor for the emotional state of those who
+          wander without safety. Where do we actually feel safe&#8239;? What
+          does “&#8239;home&#8239;” mean when the world keeps shifting beneath
+          us&#8239;?
+        </p>
+      </div>
+      <div class="flex-item flex-item-2"></div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-no-space">
+      <div class="flex-item flex-item-4"></div>
+      <div class="flex-item flex-item-7">
+        <img src="../assets/13-lost/13-lost-4.webp" />
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-no-space">
+      <div class="flex-item mob-less-space mob-mt-md">
+        <p>
+          Told through two alternating perspectives, the film continuously pulls
+          he viewer back and forth. The viewer is invited to question their own
+          position of the observer, intruder, witness or companion.
+        </p>
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+    </div>
+    <div class="flex-container flex-container-smallerspace">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-3">
+        <img src="../assets/13-lost/13-lost-5.webp" />
+      </div>
+    </div>
+    <div class="flex-container flex-container-smallerspace mob-more-space">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-5">
+        <img src="../assets/13-lost/13-lost-6.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4 flex-item-center mob-mt-sm">
+        <p>
+          LOST blends real-world with simulated footage, highlighting the
+          tension between lived experience and its distanced representation. The
+          world appears familiar but unstable. Like life itself, the film begins
+          and ends in silence. Can we find hope or is leaving the only way to
+          survive&#8239;?
+        </p>
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <script>
+      (function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          var video = document.querySelector("video[data-mobile-hf]");
+          if (video) {
+            video.innerHTML = "";
+            var s1 = document.createElement("source");
+            s1.src = "../assets/13-lost/13-lost-1-hf.webm";
+            s1.type = "video/webm";
+            var s2 = document.createElement("source");
+            s2.src = "../assets/13-lost/13-lost-1-hf.mp4";
+            s2.type = "video/mp4";
+            video.appendChild(s1);
+            video.appendChild(s2);
+            video.load();
+          }
+        }
+      })();
+    </script>
+    <script src="../js/load-header.js"></script>
+    <script src="../js/load-menu.js"></script>
+    <script src="../js/video-controls.js"></script>
+  </body>
+</html>

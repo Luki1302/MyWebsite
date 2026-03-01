@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+assets/13-lost/13-lost-0-ganzerfilm.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/13-lost/13-lost-0-ganzerfilm.webm filter=lfs diff=lfs merge=lfs -text
+assets/final-video.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/13-lost/.webm filter=lfs diff=lfs merge=lfs -text

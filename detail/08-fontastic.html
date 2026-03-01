@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontastic</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="detail-page has-page-title" data-page-title="Fontastic">
+    <div id="header-placeholder"></div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="detail-info">
+      <div class="flex-container">
+        <div class="flex-item">
+          <div class="info-row">
+            <div class="info-label"><p>Year</p></div>
+            <div class="info-value"><p>2025</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Duration</p></div>
+            <div class="info-value"><p>1 semester</p></div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Mentoring</p></div>
+            <div class="info-value">
+              <a
+                href="https://teddavis.org/"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                >Ted Davis</a
+              >
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-label"><p>Links</p></div>
+            <div class="info-value">
+              <a
+                href="https://github.com/Luki1302/gtm25_type-animation-tool"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                href="https://luki1302.github.io/gtm25_type-animation-tool/"
+                class="info-link"
+                target="_blank"
+                rel="noopener"
+                >Tool</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex-item"></div>
+        <div class="flex-item">
+          <p>
+            “&#8239;Fontastic&#8239;” is a generative design tool that uses
+            typography as a visual instrument for dynamic animations. As the
+            name suggests, it transforms type into something truly fantastic. By
+            leveraging mathematical principles such as sine and tangent waves,
+            “&#8239;Fontastic&#8239;“ enables users to animate text through
+            movement, distortion and rhythm.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="video-player flex-container flex-container-smallspace mob-more-space"
+    >
+      <video autoplay loop muted playsinline data-mobile-hf>
+        <source
+          src="../assets/08-fontastic/08-fontastic-1.webm"
+          type="video/webm"
+        />
+        <source
+          src="../assets/08-fontastic/08-fontastic-1.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <div class="flex-container flex-container-smallspace">
+      <div class="flex-item flex-item-2 mob-less-space mob-mt-lg">
+        <video id="video-fontastic" autoplay loop muted playsinline>
+          <source
+            src="../assets/08-fontastic/08-fontastic-2.webm"
+            type="video/webm"
+          />
+          <source
+            src="../assets/08-fontastic/08-fontastic-2.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <div class="flex-container flex-container-smallspace mob-no-space">
+      <div class="flex-item flex-item-2 flex-item-center">
+        <img src="../assets/08-fontastic/08-fontastic-3.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-5">
+        <img src="../assets/08-fontastic/08-fontastic-4.webp" />
+      </div>
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-3">
+        <img src="../assets/08-fontastic/08-fontastic-5.webp" />
+      </div>
+    </div>
+    <div class="flex-container flex-container-smallerspace">
+      <div class="flex-item"></div>
+      <div class="flex-item flex-item-4 mob-less-space mob-mt-md">
+        <p>
+          The tool allows you to load and experiment with any font, turning
+          static type into animated specimens. A key feature is its interactive
+          interface, where users can fine-tune a wide range of parameters
+          including colours, canvas and font size and wave behavior to shape the
+          motion of the character input. The real-time manipulation offers a
+          playful, explorative environment that bridges typography, motion
+          design and code-based creativity.
+        </p>
+      </div>
+      <div class="flex-item flex-item-2"></div>
+      <div class="flex-item flex-item-4 mob-more-space">
+        <video autoplay loop muted playsinline>
+          <source
+            src="../assets/08-fontastic/08-fontastic-6.webm"
+            type="video/webm"
+          />
+          <source
+            src="../assets/08-fontastic/08-fontastic-6.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="flex-item"></div>
+    </div>
+    <script>
+      (function () {
+        if (window.matchMedia("(max-width: 767px)").matches) {
+          var video = document.querySelector("video[data-mobile-hf]");
+          if (video) {
+            video.innerHTML = "";
+            var s1 = document.createElement("source");
+            s1.src = "../assets/08-fontastic/08-fontastic-1-hf.webm";
+            s1.type = "video/webm";
+            var s2 = document.createElement("source");
+            s2.src = "../assets/08-fontastic/08-fontastic-1-hf.mp4";
+            s2.type = "video/mp4";
+            video.appendChild(s1);
+            video.appendChild(s2);
+            video.load();
+          }
+        }
+      })();
+    </script>
+    <script src="../js/load-header.js"></script>
+    <script src="../js/load-menu.js"></script>
+    <script src="../js/videospeed.js"></script>
+    <script src="../js/video-controls.js"></script>
+  </body>
+</html>
