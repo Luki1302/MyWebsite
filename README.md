@@ -33,8 +33,9 @@ The website is built with a lightweight and modular structure:
 Development and refinement were supported by AI-assisted tools for research, optimization and debugging.
 
 <h2>Contact</h2>
+
 For collaborations, commissions or inquiries:
 
-Website: [lukashecht.ch](https://lukashecht.ch/)
-Email: lukas.hecht@bluewin.ch
-Instagram: [lukashecht1](https://www.instagram.com/lukashecht1/)
+- Website: [lukashecht.ch](https://lukashecht.ch/)
+- Email: lukas.hecht@bluewin.ch
+- Instagram: [lukashecht1](https://www.instagram.com/lukashecht1/)
