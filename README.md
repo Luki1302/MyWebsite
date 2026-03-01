@@ -12,6 +12,7 @@ The website is designed to reflect this approach:
 - System-based and scalable
 
 <h2>Services</h2>
+
 - Visual Identity
 - Digital Design
 - Motion Design
@@ -21,15 +22,18 @@ The website is designed to reflect this approach:
 
 <h2>Technical Overview</h2>
 The website is built with a lightweight and modular structure:
+
 - HTML5
 - CSS3 (flexbox-based layout system)
 - JavaScript for interactive elements
 - Responsive design principles
 - Optimized media formats for performance
+- 
 Development and refinement were supported by AI-assisted tools for research, optimization and debugging.
 
 <h2>Contact</h2>
 For collaborations, commissions or inquiries:
+
 Website: [lukashecht.ch](https://lukashecht.ch/)
 Email: lukas.hecht@bluewin.ch
 Instagram: [lukashecht1](https://www.instagram.com/lukashecht1/)
