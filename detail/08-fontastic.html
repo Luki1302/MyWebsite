@@ -70,10 +70,6 @@
     >
       <video autoplay loop muted playsinline data-mobile-hf>
         <source
-          src="../assets/08-fontastic/08-fontastic-1.webm"
-          type="video/webm"
-        />
-        <source
           src="../assets/08-fontastic/08-fontastic-1.mp4"
           type="video/mp4"
         />
@@ -82,10 +78,6 @@
     <div class="flex-container flex-container-smallspace">
       <div class="flex-item flex-item-2 mob-less-space mob-mt-lg">
         <video id="video-fontastic" autoplay loop muted playsinline>
-          <source
-            src="../assets/08-fontastic/08-fontastic-2.webm"
-            type="video/webm"
-          />
           <source
             src="../assets/08-fontastic/08-fontastic-2.mp4"
             type="video/mp4"
@@ -124,10 +116,6 @@
       <div class="flex-item flex-item-4 mob-more-space">
         <video autoplay loop muted playsinline>
           <source
-            src="../assets/08-fontastic/08-fontastic-6.webm"
-            type="video/webm"
-          />
-          <source
             src="../assets/08-fontastic/08-fontastic-6.mp4"
             type="video/mp4"
           />
@@ -141,13 +129,9 @@
           var video = document.querySelector("video[data-mobile-hf]");
           if (video) {
             video.innerHTML = "";
-            var s1 = document.createElement("source");
-            s1.src = "../assets/08-fontastic/08-fontastic-1-hf.webm";
-            s1.type = "video/webm";
             var s2 = document.createElement("source");
             s2.src = "../assets/08-fontastic/08-fontastic-1-hf.mp4";
             s2.type = "video/mp4";
-            video.appendChild(s1);
             video.appendChild(s2);
             video.load();
           }
