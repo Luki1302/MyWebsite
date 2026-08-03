@@ -1080,6 +1080,10 @@ body.detail-page:not(.page-projects) > .video-player.in-view {
 
     .detail-info { height: auto; }
     .detail-info > .flex-container { gap: 1em; margin-bottom: 0; }
+    .detail-info > .flex-container > .flex-item:first-child {
+        min-height: calc(50vh - 1em);
+        justify-content: flex-end;
+    }
     .detail-info .mob-less-space { margin-bottom: 0 !important; }
 
     .flex-container { flex-direction: column; margin-bottom: 0.5em; gap: 0.5em; }
