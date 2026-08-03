@@ -1078,7 +1078,7 @@ body.detail-page:not(.page-projects) > .video-player.in-view {
     .info-content:not(.visible) { display: none; }
     .info-panel .flex-container { gap: 0; }
 
-    .detail-info { height: auto; min-height: 50vh; justify-content: flex-start; }
+    .detail-info { height: auto; }
     .detail-info > .flex-container { gap: 1em; margin-bottom: 0; }
     .detail-info .mob-less-space { margin-bottom: 0 !important; }
 

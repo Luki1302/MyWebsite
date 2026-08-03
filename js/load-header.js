@@ -379,43 +379,6 @@ fetch("/header.html")
       });
     }
 
-    if (
-      document.body.classList.contains("detail-page") &&
-      !document.body.classList.contains("page-projects")
-    ) {
-      const detailInfo = document.querySelector(".detail-info");
-      const infoFlexContainer = detailInfo
-        ? detailInfo.querySelector(":scope > .flex-container")
-        : null;
-      const descriptionItem = infoFlexContainer
-        ? infoFlexContainer.querySelector(":scope > .flex-item:last-child")
-        : null;
-
-      function positionMobileDescription() {
-        if (!descriptionItem) return;
-        if (!window.matchMedia("(max-width: 767px)").matches) {
-          descriptionItem.style.marginTop = "";
-          return;
-        }
-        descriptionItem.style.marginTop = "0px";
-        const rect = descriptionItem.getBoundingClientRect();
-        const delta = window.innerHeight * 0.5 - rect.top;
-        descriptionItem.style.marginTop = Math.max(0, delta) + "px";
-      }
-
-      positionMobileDescription();
-      window.addEventListener("resize", positionMobileDescription);
-      window.addEventListener("orientationchange", positionMobileDescription);
-      window.addEventListener("load", positionMobileDescription);
-      if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(positionMobileDescription);
-      }
-      if (detailInfo) {
-        detailInfo.addEventListener("transitionend", positionMobileDescription);
-      }
-      setTimeout(positionMobileDescription, 1000);
-    }
-
     const introOverlay = document.querySelector(".transition-overlay.intro");
     if (introOverlay) {
       requestAnimationFrame(() => {
