@@ -1,4 +1,8 @@
 const projects = [
+  {
+    id: "vordemgesetz",
+    video: "assets/00-vordemgesetz/00_vordemgesetz-0.webm",
+  },
   { id: "furtgoh", video: "assets/01-furtgoh/01-furtgoh-0.webm" },
   {
     id: "pharmaziemuseum",
